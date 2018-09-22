@@ -427,7 +427,6 @@ def show_clause(message, consultation_id:, section_id:, clause_id:, user:)
   message.typing_on
   message.reply(
     text: "#{clause.content}",
-    text: "#{clause.subclauses.each(&:content)}",
     quick_replies:[
       {
         content_type: "text",

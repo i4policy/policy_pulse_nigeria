@@ -109,13 +109,18 @@ cl3 = Clause.create!(content: 'Adopt a “dig once” policy, so that any tradit
     status: "Anambra State included the implementation of Dig Once policy as part of its smart city initiative.",
     clause: cl3
   )
-cl4 = Clause.create!(content: 'Build a national data framework and harmonise e-Governance to enable innovation, improve efficiency, transparency, accountability and citizen participation in government:', section: s1)
+cl4 = Clause.create!(section: s1, content:
+  'Build a national data framework and harmonise e-Governance to enable innovation, improve efficiency, transparency, accountability and citizen participation in government:
+   a) Build a single digital platform that aligns access to government datasets and to electronically process Freedom of Information (FOI) requests for every MDA;
+   b) Amend the FOI Act to strengthen enforcement and compliance;
+   c) Harmonise e-Governance by using a Whole of Government (WoG) approach to rationalise and simplify access to government services.'
+   )
   Question.create!(content: 'How well does this represent your views?', clause: cl4)
   Question.create!(content: 'Does this strengthen the Nigerian technology entrepreneurship ecosystem?', clause: cl4)
   Question.create!(content: 'Please provide your suggested revision', clause: cl4)
-  Subclause.create!(clause: cl4, content: 'Build a single digital platform that aligns access to government datasets and to electronically process Freedom of Information (FOI) requests for every MDA;')
-  Subclause.create!(clause: cl4, content: 'Amend the FOI Act to strengthen enforcement and compliance;')
-  Subclause.create!(clause: cl4, content: 'Harmonise e-Governance by using a Whole of Government (WoG) approach to rationalise and simplify access to government services.')
+  # Subclause.create!(clause: cl4, content: 'Build a single digital platform that aligns access to government datasets and to electronically process Freedom of Information (FOI) requests for every MDA;')
+  # Subclause.create!(clause: cl4, content: 'Amend the FOI Act to strengthen enforcement and compliance;')
+  # Subclause.create!(clause: cl4, content: 'Harmonise e-Governance by using a Whole of Government (WoG) approach to rationalise and simplify access to government services.')
   Metadatum.create!(
     agency: "National Information Technology Development Agency (NITDA), Federal Ministry of Communications, Federal Ministry of Justice, National Bureau of Statistics (NBS), National eGovernment Strategies (NeGSt), National Identity Management Commission (NIMC) and all MDAs.",
     rationale: "Data is vital for any economy to progress, its availability to policy makers, businesses and citizens has direct impact on how government delivers services. Simplified access to government services will improve transparency of common processes, data integrity and reduce the time and cost associated with accessing information.",
@@ -159,17 +164,25 @@ s2 = Section.create!(title: 'Education Reform, Skills Development and R+D',
 description: "Nigeria will have a globally competitive workforce. By 2025, achieve digital literacy rates of 75% of the total population. Public and privately funded R&D will surpass 1% of GDP.",
 legislation: l)
 puts "creating clauses for section 2"
-cl6 = Clause.create!(section: s2, content: 'Reform the national education system and curricula:')
-  Subclause.create!(clause: cl6,
-    content: 'Incorporate problem solving, critical thinking and digital literacy skills from Early Childhood Development curriculum')
-  Subclause.create!(clause: cl6,
-    content: 'Provide training and funding for innovative indigenous e-learning applications and games;')
-  Subclause.create!(clause: cl6,
-    content: 'Transform all libraries from information repositories into information hubs with free internet access, e-learning tools, massive online open courses (MOOCs), and space for student groups to meet')
-  Subclause.create!(clause: cl6,
-    content: 'Provide continuing education trainings for teachers that emphasises technological change and new e-learning tools;')
-  Subclause.create!(clause: cl6,
-    content: 'Create a single portal to access all government scholarships and loans for national and international education.')
+cl6 = Clause.create!(section: s2,
+  content:
+  'Reform the national education system and curricula:
+  a) Incorporate problem solving, critical thinking and digital literacy skills from Early Childhood Development curriculum
+  b) Provide training and funding for innovative indigenous e-learning applications and games;
+  c) Transform all libraries from information repositories into information hubs with free internet access, e-learning tools, massive online open courses (MOOCs), and space for student groups to meet
+  d) Provide continuing education trainings for teachers that emphasises technological change and new e-learning tools;
+  e) Create a single portal to access all government scholarships and loans for national and international education.'
+  )
+  # Subclause.create!(clause: cl6,
+  #   content: 'Incorporate problem solving, critical thinking and digital literacy skills from Early Childhood Development curriculum')
+  # Subclause.create!(clause: cl6,
+  #   content: 'Provide training and funding for innovative indigenous e-learning applications and games;')
+  # Subclause.create!(clause: cl6,
+  #   content: 'Transform all libraries from information repositories into information hubs with free internet access, e-learning tools, massive online open courses (MOOCs), and space for student groups to meet')
+  # Subclause.create!(clause: cl6,
+  #   content: 'Provide continuing education trainings for teachers that emphasises technological change and new e-learning tools;')
+  # Subclause.create!(clause: cl6,
+  #   content: 'Create a single portal to access all government scholarships and loans for national and international education.')
   Question.create!(content: 'How well does this represent your views?', clause: cl6)
   Question.create!(content: 'Does this strengthen the Nigerian technology entrepreneurship ecosystem?', clause: cl6)
   Question.create!(content: 'Please provide your suggested revision', clause: cl6)
@@ -178,15 +191,21 @@ cl6 = Clause.create!(section: s2, content: 'Reform the national education system
     rationale: 'Although the Law already supports the integration of Information Technology into the educational sector, it is not being implemented fully.',
     status: 'Section 4 (19b) (ix) of the National Policy on Education states that the “curriculum for primary education shall include computer education’’ and Section 5 (30) (f) says “Government shall provide necessary infrastructure and training for the integration of ICT in the school system in recognition of the role of ICT in advancing knowledge and skills in the modern world”. The above Law has been truncated over the years as a result of the following reasons; lack of required telecommunications infrastructure capable of transporting multimedia messaging and absence of electric power grids in most parts of the country even in cases where there is adequate telecommunications coverage amongst others. Nigerian government is considering a new policy of graduates studying extra one year before NYSC to make them fit for employment.',
     clause: cl6)
-cl7 = Clause.create!(section: s2, content: 'Improve digital literacy and technical skills amongst youth to encourage digital job creation and empowerment:')
-  Subclause.create!(clause: cl7,
-    content: 'Train interested corps members in digital literacy during NYSC. Create subsidised schemes for computer acquisition for corp members and other individuals;')
-  Subclause.create!(clause: cl7,
-    content: 'Deploy qualified and interested corp members to schools to support digital literacy education;')
-  Subclause.create!(clause: cl7,
-    content: 'Upgrade Technical and Vocational Education and Training (TVET) programs to include software and hardware development and maintenance. Ensure that all TVET programs are digitally enabled;')
-  Subclause.create!(clause: cl7,
-    content: 'Raise awareness about available facilities for digital capacity building and encourage MDAs to share infrastructure with other government and non-government organisations supporting digital literacy and skills.')
+cl7 = Clause.create!(section: s2, content:
+  'Improve digital literacy and technical skills amongst youth to encourage digital job creation and empowerment:
+  a) Train interested corps members in digital literacy during NYSC. Create subsidised schemes for computer acquisition for corp members and other individuals;
+  b) Deploy qualified and interested corp members to schools to support digital literacy education;
+  c) Upgrade Technical and Vocational Education and Training (TVET) programs to include software and hardware development and maintenance. Ensure that all TVET programs are digitally enabled;
+  d) Raise awareness about available facilities for digital capacity building and encourage MDAs to share infrastructure with other government and non-government organisations supporting digital literacy and skills.'
+  )
+  # Subclause.create!(clause: cl7,
+  #   content: 'Train interested corps members in digital literacy during NYSC. Create subsidised schemes for computer acquisition for corp members and other individuals;')
+  # Subclause.create!(clause: cl7,
+  #   content: 'Deploy qualified and interested corp members to schools to support digital literacy education;')
+  # Subclause.create!(clause: cl7,
+  #   content: 'Upgrade Technical and Vocational Education and Training (TVET) programs to include software and hardware development and maintenance. Ensure that all TVET programs are digitally enabled;')
+  # Subclause.create!(clause: cl7,
+  #   content: 'Raise awareness about available facilities for digital capacity building and encourage MDAs to share infrastructure with other government and non-government organisations supporting digital literacy and skills.')
   Question.create!(content: 'How well does this represent your views?', clause: cl7)
   Question.create!(content: 'Does this strengthen the Nigerian technology entrepreneurship ecosystem?', clause: cl7)
   Question.create!(content: 'Please provide your suggested revision', clause: cl7)
@@ -248,12 +267,17 @@ s3 = Section.create!(title: 'Supporting the Ecosystem for Innovative Entrepreneu
 description: "By 2025, Nigeria will become a digital economy and ICT will contribute 25% to the national GDP.",
 legislation: l)
 puts 'clause 12'
-cl12 = Clause.create!(section: s3,
-  content: 'Facilitate startup growth by easing the business environment and simplifying access to opportunities for indigenous innovators:')
-  Subclause.create!(clause: cl12, content: 'Simplify procedures for opening and closing a business;')
-  Subclause.create!(clause: cl12, content: 'Ease cross-border trade by simplifying procedures and reviewing restrictions on both imports and exports;')
-  Subclause.create!(clause: cl12, content: 'Simplify access to subsidised credit facilities for startups;')
-  Subclause.create!(clause: cl12, content: 'Raise awareness about opportunities for digital entrepreneurship and skills acquisition.')
+cl12 = Clause.create!(section: s3, content:
+  'Facilitate startup growth by easing the business environment and simplifying access to opportunities for indigenous innovators:
+  a) Simplify procedures for opening and closing a business;
+  b) Ease cross-border trade by simplifying procedures and reviewing restrictions on both imports and exports;
+  c) Simplify access to subsidised credit facilities for startups;
+  d) Raise awareness about opportunities for digital entrepreneurship and skills acquisition.
+  ')
+  # Subclause.create!(clause: cl12, content: 'Simplify procedures for opening and closing a business;')
+  # Subclause.create!(clause: cl12, content: 'Ease cross-border trade by simplifying procedures and reviewing restrictions on both imports and exports;')
+  # Subclause.create!(clause: cl12, content: 'Simplify access to subsidised credit facilities for startups;')
+  # Subclause.create!(clause: cl12, content: 'Raise awareness about opportunities for digital entrepreneurship and skills acquisition.')
   Question.create!(content: 'How well does this represent your views?', clause: cl12)
   Question.create!(content: 'Does this strengthen the Nigerian technology entrepreneurship ecosystem?', clause: cl12)
   Question.create!(content: 'Please provide your suggested revision', clause: cl12)
@@ -271,17 +295,24 @@ cl12 = Clause.create!(section: s3,
     Recently, the Federal Government made a declaration to include technology startups and businesses in the pioneer list. Pioneer Status Incentives (PSI) allows companies to benefit from a tax holiday for three years renewable for additional two years, tax free dividends  during the tax holiday, capital allowances and tax losses. NITDA through Office for ICT Innovation and Entrepreneurship (OIIE) is working on developing guidelines for startups to raise awareness on the opportunities available and how to access them. Creating awareness will ensure that Nigerians are enlightened and benefit from the ICT ecosystem. This will in turn reduce the unemployment rate of the country.')
 puts 'clause 13'
   cl13 = Clause.create!(section: s3,
-    content: 'Provide support for hubs and linkages for nationwide collaborations:')
-  Subclause.create!(clause: cl13,
-    content: 'Provide trainings to build the capabilities of hubs to support entrepreneurs;')
-  Subclause.create!(clause: cl3,
-    content: 'Facilitate international collaborations and partnerships;')
-  Subclause.create!(clause: cl13,
-    content: 'Support innovation hubs through tax incentives, such as granting pioneer status;')
-  Subclause.create!(clause: cl13,
-    content: 'Provide tax rebates for any payments for internet and telephone;')
-  Subclause.create!(clause: cl13,
-    content: 'Partner with independent innovation hubs to support technology entrepreneurs.')
+    content: '
+    Provide support for hubs and linkages for nationwide collaborations:
+    a) Provide trainings to build the capabilities of hubs to support entrepreneurs;
+    b) Facilitate international collaborations and partnerships;
+    c) Support innovation hubs through tax incentives, such as granting pioneer status;
+    d) Provide tax rebates for any payments for internet and telephone;
+    e) Partner with independent innovation hubs to support technology entrepreneurs.
+    ')
+  # Subclause.create!(clause: cl13,
+  #   content: 'Provide trainings to build the capabilities of hubs to support entrepreneurs;')
+  # Subclause.create!(clause: cl3,
+  #   content: 'Facilitate international collaborations and partnerships;')
+  # Subclause.create!(clause: cl13,
+  #   content: 'Support innovation hubs through tax incentives, such as granting pioneer status;')
+  # Subclause.create!(clause: cl13,
+  #   content: 'Provide tax rebates for any payments for internet and telephone;')
+  # Subclause.create!(clause: cl13,
+  #   content: 'Partner with independent innovation hubs to support technology entrepreneurs.')
   Question.create!(content: 'How well does this represent your views?', clause: cl13)
   Question.create!(content: 'Does this strengthen the Nigerian technology entrepreneurship ecosystem?', clause: cl13)
   Question.create!(content: 'Please provide your suggested revision', clause: cl13)
