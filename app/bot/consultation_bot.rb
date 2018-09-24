@@ -300,7 +300,7 @@ def outboard(message)
       type: 'template',
       payload: {
         template_type: 'button',
-        text: 'If you want to dive deeper into the process, please visit our web app by clicking on the button below.',
+        text: 'If you want to dive deeper into the process and the full details of the policy, please visit our web app by clicking on the button below.',
         buttons: [
           { type: 'web_url',
             url:"https://www.facebook.com",
