@@ -15,7 +15,7 @@ class LegislationsController < ApplicationController
   end
 
   def download_pdf
-    send_file "#{Rails.root}/public/docs/full_vision.pdf", type: "application/pdf", x_sendfile: true
+    send_file "#{Rails.root}/public/docs/nigeria_ict_innovation_and_entrepreneurship_vision.pdf", type: "application/pdf", x_sendfile: true
   end
 
   # GET /legislations/new
