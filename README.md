@@ -1,3 +1,8 @@
+# Precursor
+
+Chatbot master is on branch `new-chatbot-master`
+WebApp master is on branch `master`
+
 # National Policy Consultation 
 
 This is the opensource code repository of the digital policy consultation tool that will serve as the backbone for policy consultations across several countries in Africa and beyond. It is a digital policy consultation across a nation as a Rails App with two key elements: (a) a ‘collaborative policy-writing’ tool (b) a Facebook messenger bot. The consultation will be live for a specified perod, after which the insight, feedback, and deliberation will be consolidated, integrated, and built into a revised citizen-driven national vision for ICT innovation and entrepreneurship.
