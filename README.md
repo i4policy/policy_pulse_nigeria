@@ -1,8 +1,3 @@
-# Precursor
-
-Chatbot master is on branch `new-chatbot-master`
-WebApp master is on branch `master`
-
 # National Policy Consultation 
 
 This is the opensource code repository of the digital policy consultation tool that will serve as the backbone for policy consultations across several countries in Africa and beyond. It is a digital policy consultation across a nation as a Rails App with two key elements: (a) a ‘collaborative policy-writing’ tool (b) a Facebook messenger bot. The consultation will be live for a specified perod, after which the insight, feedback, and deliberation will be consolidated, integrated, and built into a revised citizen-driven national vision for ICT innovation and entrepreneurship.
@@ -20,6 +15,9 @@ When all the four milestones are completed, we will be ready to deploy the first
 ##### Policy: Innovation and Entrepreneurship Policy Vision 
 
 ### Web App: 
+
+# master is on branch `master`
+
 We are going to modify a fork of Consul (information and documentation can be found below), a civic engagement tool developed by the city council of Madrid from 2015 onward. There are several tools in the Consul suite, however the one that we will be customizing and building off of for the consultation is the legislative processes and collaborative policy capability.
 
 The core user story is as follows: 
@@ -36,6 +34,8 @@ The core user story is as follows:
 Relevant Documentation Here: https://consul_docs.gitbooks.io/docs/content/en/
 
 ### Messenger Bot: 
+
+# chatbot master is on branch `chatbot-new-master` so when coding on chatbot, branch off of this branch
 
 This is in efforts to make the consultation as representative as possible, and cater to a larger part of the population by (a) hitting them on the mediums they are frequenting already and (b) catering to the part of the population that only has access to Free Basics. 
 
