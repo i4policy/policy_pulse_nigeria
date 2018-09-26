@@ -16,7 +16,7 @@ When all the four milestones are completed, we will be ready to deploy the first
 
 ### Web App: 
 
-# master is on branch `master`
+#### master is on branch `master`
 
 We are going to modify a fork of Consul (information and documentation can be found below), a civic engagement tool developed by the city council of Madrid from 2015 onward. There are several tools in the Consul suite, however the one that we will be customizing and building off of for the consultation is the legislative processes and collaborative policy capability.
 
@@ -35,7 +35,7 @@ Relevant Documentation Here: https://consul_docs.gitbooks.io/docs/content/en/
 
 ### Messenger Bot: 
 
-# chatbot master is on branch `chatbot-new-master` so when coding on chatbot, branch off of this branch
+#### chatbot master is on branch `chatbot-new-master` so when coding on chatbot, branch off of this branch
 
 This is in efforts to make the consultation as representative as possible, and cater to a larger part of the population by (a) hitting them on the mediums they are frequenting already and (b) catering to the part of the population that only has access to Free Basics. 
 
