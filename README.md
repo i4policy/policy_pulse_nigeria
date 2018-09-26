@@ -2,6 +2,17 @@
 
 This is the opensource code repository of the digital policy consultation tool that will serve as the backbone for policy consultations across several countries in Africa and beyond. It is a digital policy consultation across a nation as a Rails App with two key elements: (a) a ‘collaborative policy-writing’ tool (b) a Facebook messenger bot. The consultation will be live for a specified perod, after which the insight, feedback, and deliberation will be consolidated, integrated, and built into a revised citizen-driven national vision for ICT innovation and entrepreneurship.
 
+## Core Tech Stack 
+
+* Ruby-on-Rails
+* [StimulusJS](https://stimulusjs.org) 
+* Facebook Messenger API 
+* [Facebook Messenger Gem] (https://github.com/jgorset/facebook-messenger)
+* PostgreSQL
+
+#### Note: chatbot and web-app are pushed to production from two master branches to two different remotes to separate concerns from one another, the chatbot master is on branch `chatbot-new-master` so when coding on chatbot, pull down this branch and work off of that. The web-app master is on the standard `master` branch. So when PRs are opened be specific whether your code is for chatbot or webapp. 
+
+
 ## Work Flows
 
 We have a [project board](https://github.com/i4policy/policy_consultation/projects/1) that is interacting with our [issues list](https://github.com/i4policy/policy_consultation/issues) and subsequent pull requests on those issues; the issues are labeled accordingly and associated with the [four milestones](https://github.com/i4policy/policy_consultation/milestones). 
@@ -35,7 +46,7 @@ Relevant Documentation Here: https://consul_docs.gitbooks.io/docs/content/en/
 
 ### Messenger Bot: 
 
-#### chatbot master is on branch `chatbot-new-master` so when coding on chatbot, branch off of this branch
+#### chatbot master is on branch `chatbot-new-master` so if coding on chatbot, pull down this branch
 
 This is in efforts to make the consultation as representative as possible, and cater to a larger part of the population by (a) hitting them on the mediums they are frequenting already and (b) catering to the part of the population that only has access to Free Basics. 
 
