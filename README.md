@@ -6,8 +6,8 @@ This is the opensource code repository of the digital policy consultation tool t
 
 * Ruby-on-Rails
 * [StimulusJS](https://stimulusjs.org) 
-* Facebook Messenger API 
-* [Facebook Messenger Gem] (https://github.com/jgorset/facebook-messenger)
+* Facebook Messenger Send API 
+* [Facebook Messenger Gem](https://github.com/jgorset/facebook-messenger)
 * PostgreSQL
 
 #### Note: chatbot and web-app are pushed to production from two master branches to two different remotes to separate concerns from one another, the chatbot master is on branch `chatbot-new-master` so when coding on chatbot, pull down this branch and work off of that. The web-app master is on the standard `master` branch. So when PRs are opened be specific whether your code is for chatbot or webapp. 
